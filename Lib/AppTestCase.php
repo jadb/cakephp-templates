@@ -229,12 +229,12 @@ class AppTestCase extends CakeTestCase {
 	}
 
 	
-	public function assertIsA($actual, $expected, $message = '') {
-		self::assertType($expected, $actual, $message);
+	public static function assertIsA($actual, $expected, $message = '') {
+		parent::assertIsA($actual, $expected, $message);
 	}
 
 	public static function assertNotA($actual, $expected, $message = '') {
-		self::assertNotType($expected, $actual, $message);
+		parent::assertNotA($actual, $expected, $message);
 	}
 
 	public static function assertTrue($condition, $message = '') {
